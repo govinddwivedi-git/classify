@@ -1,23 +1,10 @@
-# dependencies
-node_modules/
+# =============================================================================
+# Editor and OS Files
+# =============================================================================
+# macOS
+.DS_Store
 
-# builds
-dist/
-dist-ssr/
-*.local
-
-# environment
-.env*
-!.env.example
-
-# logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-*.log
-
-# editor directories and files
+# Editor directories and files
 .idea/
 .vscode/
 *.suo
@@ -25,6 +12,99 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+docs
 
-# macOS
-.DS_Store
+
+# =============================================================================
+# Node.js / Frontend
+# =============================================================================
+# Dependencies (ignore node_modules in any folder)
+node_modules/
+**/node_modules/
+frontend/node_modules/
+
+# Package managers / caches
+.pnp/
+.pnpm-debug.log
+.parcel-cache/
+
+# Build outputs
+dist/
+dist-ssr/
+frontend/dist/
+build/
+.cache/
+.next/
+out/
+.vite/
+
+# Tooling / monorepo
+.turbo/
+.idea/.cache/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# Environment variables
+.env*
+!.env.example
+*.local
+
+
+# =============================================================================
+# Python / Backend
+# =============================================================================
+# Virtual Environments
+/backend/venv_songs/
+venv/
+.venv/
+env/
+ENV/
+*.env
+
+# Byte-compiled / optimized / C extensions
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+backend/lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Mypy cache
+.mypy_cache/
+
+# Other
+*.sqlite3
+*.db
+# Large dataset folders
+backend/data/genres/
